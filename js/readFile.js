@@ -278,15 +278,16 @@ let globalObject = {
 
                     listJson.table.push({
                         _id: mongoose.Types.ObjectId(new ObjectId()),
-                        group: numberGroup,
-                        idUser: department,
                         title: subject,
-                        idAudience: checkedAudience.toString().toUpperCase(),
-                        idType: type,
                         teacher: teacher,
+                        group: numberGroup.toString(),
+                        date: dateOfLesson.toISOString().substring(0, 10),
+                        idAudience: checkedAudience.toString().toUpperCase(),
                         numberLesson: numberLesson === 'I' ? 1 : numberLesson === 'II' ? 2 : numberLesson === 'III' ? 3 : numberLesson
                         === 'IV' ? 4 : numberLesson,
-                        date: dateOfLesson.toISOString().substring(0, 10)
+                        idType: type,
+                        idUser: department,
+                        __v: 0
                     })
                 }
             }

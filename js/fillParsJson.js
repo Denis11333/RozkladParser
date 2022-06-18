@@ -35,6 +35,7 @@ let globalObject = {
 
 
                     collection = db.collection("types");
+
                     collection.find().toArray(function (err, results) {
                         for (let i = 0; i < editedPars.table.length; i++) {
                             if (editedPars.table[i].idType === 'Л') {
@@ -54,44 +55,78 @@ let globalObject = {
                                 editedPars.table[i].idType = mongoose.Types.ObjectId(results[4]._id);
                             }
                         }
+
                         collection = db.collection("users")
 
-                        for (let i = 0; i < editedPars.table.length; i++) {
-                            if (editedPars.table[i].idUser === '22') {
-                                editedPars.table[i].idUser = mongoose.Types.ObjectId(results[0]._id);
-                            }
-                            if (editedPars.table[i].idUser === '21') {
-                                editedPars.table[i].idUser = mongoose.Types.ObjectId(results[1]._id);
-                            }
-                            if (editedPars.table[i].idUser === '23') {
-                                editedPars.table[i].idUser = mongoose.Types.ObjectId(results[2]._id);
-                            }
-                        }
-
-                        for (let i = 0; i < editedPars.table.length; i++) {
-                            if (editedPars.table[i].idUser !== undefined) {
-                                if (editedPars.table[i].idUser.toString().length > 15) {
-                                    formatPars.table.push(editedPars.table[i]);
+                        collection.find().toArray(function (err, results) {
+                            for (let i = 0; i < editedPars.table.length; i++) {
+                                console.log(results)
+                                if (editedPars.table[i].idUser === '22') {
+                                    editedPars.table[i].idUser = mongoose.Types.ObjectId(results[0]._id);
+                                }
+                                if (editedPars.table[i].idUser === '21') {
+                                    editedPars.table[i].idUser = mongoose.Types.ObjectId(results[0]._id);
+                                }
+                                if (editedPars.table[i].idUser === '23') {
+                                    editedPars.table[i].idUser = mongoose.Types.ObjectId(results[0]._id);
                                 }
                             }
-                        }
 
-                        fs.writeFile(__dirname + "\\files\\fixedFile.json", JSON.stringify(formatPars, null, 4), (err) => {
-                            if (err) {
-                                console.error(err);
-                                return;
-                            }
-                            console.log("File has been created");
-                        });
+                            collection = db.collection("audience");
 
-                        client.close();
+                            collection.find().toArray(function (err, results) {
+                                for (let i = 0; i < editedPars.table.length; i++) {
+                                    if(editedPars.table[i].idAudience == "219")
+                                        editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[0]._id);
+
+                                    else if(editedPars.table[i].idAudience == "219a")
+                                        editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[1]._id);
+
+                                    else if(editedPars.table[i].idAudience == "221")
+                                        editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[2]._id);
+
+                                    else if(editedPars.table[i].idAudience == "223")
+                                        editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[3]._id);
+
+                                    else if(editedPars.table[i].idAudience == "224")
+                                        editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[4]._id);
+
+                                    else if(editedPars.table[i].idAudience == "226")
+                                        editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[5]._id);
+
+                                    else if(editedPars.table[i].idAudience == "230")
+                                        editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[6]._id);
+
+                                }
+
+
+
+                                for (let i = 0; i < editedPars.table.length; i++) {
+                                    if (editedPars.table[i].idUser !== undefined) {
+                                        if (editedPars.table[i].idUser.toString().length > 15) {
+                                            formatPars.table.push(editedPars.table[i]);
+                                        }
+                                    }
+                                }
+
+                                fs.writeFile(__dirname + "\\files\\fixedFile.json", JSON.stringify(formatPars, null, 4), (err) => {
+                                    if (err) {
+                                        console.error(err);
+                                        return;
+                                    }
+                                    console.log("File has been created");
+                                });
+
+                                client.close();
+                            })
+
+                        })
                     })
-
                 })
             })
         })
     }
 }
 module.exports = {
-    gW : globalObject
+    gW: globalObject
 }

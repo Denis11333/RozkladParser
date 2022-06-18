@@ -12,11 +12,10 @@ app.use(fileUpload({}));
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-    res.send('Hello World');
-})
-
-app.get('/form', function (req, res) {
     res.setHeader('content-type', 'text/html;charset=utf-8');
+
+    res.write('<h1> Enter your file ( xls only ) </h1>')
+
     res.write('<form action="/upload" method="POST" enctype="multipart/form-data" >');
     res.write('<input type="file" name="photo">');
     res.write('<input type="submit">');
@@ -28,7 +27,6 @@ app.post('/upload', function (req, res) {
     req.files.photo.mv(__dirname + '\\public\\pics\\' + req.files.photo.name);
 
     res.end(req.files.photo.name);
-
 
     let readFile = require("./readFile.js");
 

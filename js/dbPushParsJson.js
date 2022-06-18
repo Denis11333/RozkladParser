@@ -13,18 +13,20 @@ let globalObject = {
 
             const db = client.db("digital-department-viti");
             const dbo = db.collection("lessons");
+
             var myobj = [];
             for (let i = 0; i < json.table.length; i++) {
 
                 myobj[i] = {
-                    'group': json.table[i].group,
-                    "idUser": new ObjectID(json.table[i].idUser),
                     "title": json.table[i].title,
-                    "idAudience": new ObjectID(json.table[i].idAudience),
-                    "idType": new ObjectID(json.table[i].idType),
                     "teacher": json.table[i].teacher,
+                    'group': json.table[i].group,
+                    "date": json.table[i].date,
+                    "idAudience": new ObjectID(json.table[i].idAudience),
                     "numberLesson": json.table[i].numberLesson,
-                    "date": json.table[i].date
+                    "idType": new ObjectID(json.table[i].idType),
+                    "idUser": new ObjectID(json.table[i].idUser),
+                    __v: 0
                 }
             }
 
