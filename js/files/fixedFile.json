@@ -1,8 +1,8 @@
 {
     "table": [
         {
-            "_id": "62ad840103befb6fbce182b6",
-            "group": 211,
+            "_id": "62ada2e37204d16d76b20ac5",
+            "group": "211",
             "idUser": "629a24b15831859aef839641",
             "title": "CP",
             "idAudience": "629a24ea5831859aef839653",
@@ -12,7 +12,7 @@
             "date": "2022-06-14"
         },
         {
-            "_id": "62ad840103befb6fbce182b9",
+            "_id": "62ada2e37204d16d76b20ac8",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "211",
@@ -24,7 +24,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182ba",
+            "_id": "62ada2e37204d16d76b20ac9",
             "title": "АП",
             "teacher": "Н.Фесьоха",
             "group": "211",
@@ -36,7 +36,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182bc",
+            "_id": "62ada2e37204d16d76b20acb",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "211",
@@ -48,7 +48,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182be",
+            "_id": "62ada2e37204d16d76b20acd",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "211",
@@ -60,7 +60,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182bf",
+            "_id": "62ada2e37204d16d76b20ace",
             "title": "АП",
             "teacher": "Н.Фесьоха",
             "group": "211",
@@ -72,8 +72,8 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182c4",
-            "group": 212,
+            "_id": "62ada2e37204d16d76b20ad3",
+            "group": "212",
             "idUser": "629a24b15831859aef839641",
             "title": "CP",
             "idAudience": "629a24ed5831859aef839656",
@@ -83,8 +83,8 @@
             "date": "2022-06-12"
         },
         {
-            "_id": "62ad840103befb6fbce182c7",
-            "group": 212,
+            "_id": "62ada2e37204d16d76b20ad6",
+            "group": "212",
             "idUser": "629a24b15831859aef839641",
             "title": "CP",
             "idAudience": "629a24ed5831859aef839656",
@@ -94,8 +94,8 @@
             "date": "2022-06-13"
         },
         {
-            "_id": "62ad840103befb6fbce182c9",
-            "group": 212,
+            "_id": "62ada2e37204d16d76b20ad8",
+            "group": "212",
             "idUser": "629a24b15831859aef839641",
             "title": "CP",
             "idAudience": "629a24ea5831859aef839653",
@@ -105,7 +105,7 @@
             "date": "2022-06-14"
         },
         {
-            "_id": "62ad840103befb6fbce182ca",
+            "_id": "62ada2e37204d16d76b20ad9",
             "title": "АП",
             "teacher": "Н.Фесьоха",
             "group": "212",
@@ -117,7 +117,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182cb",
+            "_id": "62ada2e37204d16d76b20ada",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "212",
@@ -129,7 +129,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182ce",
+            "_id": "62ada2e37204d16d76b20add",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "212",
@@ -141,7 +141,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182cf",
+            "_id": "62ada2e37204d16d76b20ade",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "212",
@@ -153,7 +153,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182d1",
+            "_id": "62ada2e37204d16d76b20ae0",
             "title": "АП",
             "teacher": "Н.Фесьоха",
             "group": "212",
@@ -165,7 +165,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182d2",
+            "_id": "62ada2e37204d16d76b20ae1",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "212",
@@ -177,8 +177,8 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182d5",
-            "group": 213,
+            "_id": "62ada2e37204d16d76b20ae4",
+            "group": "213",
             "idUser": "629a24b15831859aef839641",
             "title": "CP",
             "idAudience": "629a24ea5831859aef839653",
@@ -188,8 +188,8 @@
             "date": "2022-06-12"
         },
         {
-            "_id": "62ad840103befb6fbce182d8",
-            "group": 213,
+            "_id": "62ada2e37204d16d76b20ae7",
+            "group": "213",
             "idUser": "629a24b15831859aef839641",
             "title": "CP",
             "idAudience": "629a24ea5831859aef839653",
@@ -199,8 +199,8 @@
             "date": "2022-06-13"
         },
         {
-            "_id": "62ad840103befb6fbce182d9",
-            "group": 213,
+            "_id": "62ada2e37204d16d76b20ae8",
+            "group": "213",
             "idUser": "629a24b15831859aef839641",
             "title": "CP",
             "idAudience": "629a24ed5831859aef839656",
@@ -210,8 +210,8 @@
             "date": "2022-06-14"
         },
         {
-            "_id": "62ad840103befb6fbce182db",
-            "group": 213,
+            "_id": "62ada2e37204d16d76b20aea",
+            "group": "213",
             "idUser": "629a24b15831859aef839641",
             "title": "CP",
             "idAudience": "629a24ed5831859aef839656",
@@ -221,7 +221,7 @@
             "date": "2022-06-14"
         },
         {
-            "_id": "62ad840103befb6fbce182dc",
+            "_id": "62ada2e37204d16d76b20aeb",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "213",
@@ -233,7 +233,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182de",
+            "_id": "62ada2e37204d16d76b20aed",
             "title": "АП",
             "teacher": "Шарнін",
             "group": "213",
@@ -245,7 +245,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182df",
+            "_id": "62ada2e37204d16d76b20aee",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "213",
@@ -257,7 +257,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182e0",
+            "_id": "62ada2e37204d16d76b20aef",
             "title": "АП",
             "teacher": "Шарнін",
             "group": "213",
@@ -269,7 +269,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182ef",
+            "_id": "62ada2e37204d16d76b20afe",
             "title": "АП",
             "teacher": "Шарнін",
             "group": "214",
@@ -281,7 +281,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce182f1",
+            "_id": "62ada2e37204d16d76b20b00",
             "title": "АП",
             "teacher": "Шарнін",
             "group": "214",
@@ -293,7 +293,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce18325",
+            "_id": "62ada2e37204d16d76b20b34",
             "title": "АП",
             "teacher": "Шарнін",
             "group": "313",
@@ -305,7 +305,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce18328",
+            "_id": "62ada2e37204d16d76b20b37",
             "title": "АП",
             "teacher": "Шарнін",
             "group": "313",
@@ -317,7 +317,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce1833a",
+            "_id": "62ada2e37204d16d76b20b49",
             "title": "АП",
             "teacher": "Фарбей",
             "group": "314",
@@ -329,7 +329,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce1833d",
+            "_id": "62ada2e37204d16d76b20b4c",
             "title": "АП",
             "teacher": "Фарбей",
             "group": "314",
@@ -341,7 +341,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce1834a",
+            "_id": "62ada2e37204d16d76b20b59",
             "title": "АП",
             "teacher": "Макарчук",
             "group": "315",
@@ -353,7 +353,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce1834c",
+            "_id": "62ada2e37204d16d76b20b5b",
             "title": "АП",
             "teacher": "Макарчук",
             "group": "315",
@@ -365,8 +365,8 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce1836f",
-            "group": 201,
+            "_id": "62ada2e37204d16d76b20b7e",
+            "group": "201",
             "idUser": "629a24b15831859aef839641",
             "title": "CP",
             "idAudience": "629a24ea5831859aef839653",
@@ -376,8 +376,8 @@
             "date": "2022-06-12"
         },
         {
-            "_id": "62ad840103befb6fbce18371",
-            "group": 201,
+            "_id": "62ada2e37204d16d76b20b80",
+            "group": "201",
             "idUser": "629a24b15831859aef839641",
             "title": "КПП",
             "idAudience": "629a24ef5831859aef839659",
@@ -387,8 +387,8 @@
             "date": "2022-06-13"
         },
         {
-            "_id": "62ad840103befb6fbce18374",
-            "group": 201,
+            "_id": "62ada2e37204d16d76b20b83",
+            "group": "201",
             "idUser": "629a24b15831859aef839641",
             "title": "КПП",
             "idAudience": "629a24f55831859aef83965f",
@@ -398,7 +398,7 @@
             "date": "2022-06-14"
         },
         {
-            "_id": "62ad840103befb6fbce1837b",
+            "_id": "62ada2e37204d16d76b20b8a",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "201",
@@ -410,8 +410,8 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce1837e",
-            "group": 202,
+            "_id": "62ada2e37204d16d76b20b8d",
+            "group": "202",
             "idUser": "629a24b15831859aef839641",
             "title": "CP",
             "idAudience": "629a24ed5831859aef839656",
@@ -421,7 +421,7 @@
             "date": "2022-06-12"
         },
         {
-            "_id": "62ad840103befb6fbce18385",
+            "_id": "62ada2e37204d16d76b20b94",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "202",
@@ -433,7 +433,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce18387",
+            "_id": "62ada2e37204d16d76b20b96",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "202",
@@ -445,7 +445,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce1838b",
+            "_id": "62ada2e37204d16d76b20b9a",
             "title": "КПП",
             "teacher": "В.Бовда",
             "group": "202",
@@ -457,7 +457,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce1838c",
+            "_id": "62ada2e37204d16d76b20b9b",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "202",
@@ -469,7 +469,7 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce1838d",
+            "_id": "62ada2e37204d16d76b20b9c",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "202",
@@ -481,8 +481,8 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce18392",
-            "group": 203,
+            "_id": "62ada2e37204d16d76b20ba1",
+            "group": "203",
             "idUser": "629a24b15831859aef839641",
             "title": "КПП",
             "idAudience": "629a24ef5831859aef839659",
@@ -492,8 +492,8 @@
             "date": "2022-06-13"
         },
         {
-            "_id": "62ad840103befb6fbce18395",
-            "group": 203,
+            "_id": "62ada2e37204d16d76b20ba4",
+            "group": "203",
             "idUser": "629a24b15831859aef839641",
             "title": "КПП",
             "idAudience": "629a24f55831859aef83965f",
@@ -503,7 +503,7 @@
             "date": "2022-06-14"
         },
         {
-            "_id": "62ad840103befb6fbce18399",
+            "_id": "62ada2e37204d16d76b20ba8",
             "title": "CP",
             "teacher": "Курс.офіцер",
             "group": "203",
@@ -515,8 +515,8 @@
             "__v": 0
         },
         {
-            "_id": "62ad840103befb6fbce183f1",
-            "group": 304,
+            "_id": "62ada2e37204d16d76b20c00",
+            "group": "304",
             "idUser": "629a24b15831859aef839641",
             "title": "КПП",
             "idAudience": "629a24f55831859aef83965f",
@@ -526,8 +526,8 @@
             "date": "2022-06-13"
         },
         {
-            "_id": "62ad840103befb6fbce183f6",
-            "group": 304,
+            "_id": "62ada2e37204d16d76b20c05",
+            "group": "304",
             "idUser": "629a24b15831859aef839641",
             "title": "КПП",
             "idAudience": "629a24f25831859aef83965c",
@@ -537,8 +537,8 @@
             "date": "2022-06-14"
         },
         {
-            "_id": "62ad840103befb6fbce18402",
-            "group": 305,
+            "_id": "62ada2e37204d16d76b20c11",
+            "group": "305",
             "idUser": "629a24b15831859aef839641",
             "title": "КПП",
             "idAudience": "629a24f55831859aef83965f",
@@ -548,8 +548,8 @@
             "date": "2022-06-13"
         },
         {
-            "_id": "62ad840103befb6fbce18405",
-            "group": 305,
+            "_id": "62ada2e37204d16d76b20c14",
+            "group": "305",
             "idUser": "629a24b15831859aef839641",
             "title": "КПП",
             "idAudience": "629a24f25831859aef83965c",
@@ -559,8 +559,8 @@
             "date": "2022-06-14"
         },
         {
-            "_id": "62ad840103befb6fbce18412",
-            "group": 306,
+            "_id": "62ada2e37204d16d76b20c21",
+            "group": "306",
             "idUser": "629a24b15831859aef839641",
             "title": "КПП",
             "idAudience": "629a24ea5831859aef839653",
