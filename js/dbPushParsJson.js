@@ -11,7 +11,7 @@ let globalObject = {
 
         mongoClient.connect(function (err, client) {
 
-            const db = client.db("Crash_test");
+            const db = client.db("digital-department-viti");
             const dbo = db.collection("lessons");
             var myobj = [];
             for (let i = 0; i < json.table.length; i++) {
