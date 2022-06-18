@@ -13,7 +13,7 @@ let globalObject = {
         }
         const MongoClient = require("mongodb").MongoClient
 
-        const url = "mongodb://172.16.200.2:27017/";
+        const url = "mongodb://localhost:27017/";
         const mongoClient = new MongoClient(url);
         mongoClient.connect(function (err, client) {
 
