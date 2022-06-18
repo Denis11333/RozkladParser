@@ -23,7 +23,7 @@ let globalObject = {
         let checkedAudience;
 
         for (let i = 0; i < coordinatesOfDates.length; i++) {
-            datesOfLessons[i] = worksheet[`${coordinatesOfDates[i]}${6}`].w;
+          //  datesOfLessons[i] = worksheet[`${coordinatesOfDates[i]}${6}`].w;
         }
 
         let numberLesson
