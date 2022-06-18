@@ -6,7 +6,7 @@ let mongoose = require('mongoose')
 let globalObject = {
     readFile(pathOfFile) {
 
-        let workbook = XLSX.readFile(__dirname + '\\public\\pics\\' + pathOfFile)
+        let workbook = XLSX.readFile(__dirname + '/public/pics/' + pathOfFile)
         let worksheet = workbook.Sheets[workbook.SheetNames[0]]
 
         let listJson = {
@@ -150,7 +150,7 @@ let globalObject = {
 
                     listJson.table.push({
                         _id: mongoose.Types.ObjectId(new ObjectId()),
-                        group: numberGroup,
+                        group: numberGroup.toString(),
                         idUser: department,
                         title: subject,
                         idAudience: checkedAudience.toString().toUpperCase(),
@@ -292,7 +292,7 @@ let globalObject = {
                 }
             }
         }
-        fs.writeFile(__dirname + "\\files\\readedFile.json", JSON.stringify(listJson, null, 4), (err) => {
+        fs.writeFile(__dirname + "/files/readedFile.json", JSON.stringify(listJson, null, 4), (err) => {
             if (err) {
                 console.error(err);
                 return;
