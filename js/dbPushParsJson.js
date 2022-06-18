@@ -4,7 +4,7 @@ let globalObject = {
         let ObjectID = require("mongodb").ObjectID;
         const MongoClient = require("mongodb").MongoClient;
 
-        let json = JSON.parse(fs.readFileSync(__dirname + '\\files\\fixedFile.json'))
+        let json = JSON.parse(fs.readFileSync(__dirname + '/files/fixedFile.json'))
 
         const url = "mongodb://localhost:27017/";
         const mongoClient = new MongoClient(url);
