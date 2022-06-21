@@ -3,7 +3,7 @@ let mongoose = require('mongoose')
 let globalObject = {
     readFile() {
         console.log("I`m ok")
-        let rozkl = JSON.parse(fs.readFileSync(__dirname + '/files/readedFile.json'))
+        let rozkl = JSON.parse(fs.readFileSync(__dirname + '\\files\\readedFile.json'))
 
         let editedPars = {
             table: []
@@ -109,7 +109,7 @@ let globalObject = {
                                     }
                                 }
 
-                                fs.writeFile(__dirname + "/files/fixedFile.json", JSON.stringify(formatPars, null, 4), (err) => {
+                                fs.writeFile(__dirname + "\\files\\fixedFile.json", JSON.stringify(formatPars, null, 4), (err) => {
                                     if (err) {
                                         console.error(err);
                                         return;

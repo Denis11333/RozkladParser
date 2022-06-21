@@ -6,7 +6,7 @@ let mongoose = require('mongoose')
 let globalObject = {
     readFile(pathOfFile) {
 
-        let workbook = XLSX.readFile(__dirname + '/public/pics/' + pathOfFile)
+        let workbook = XLSX.readFile(__dirname + '\\public\\pics\\' + pathOfFile)
         let worksheet = workbook.Sheets[workbook.SheetNames[0]]
 
         let listJson = {
@@ -34,8 +34,6 @@ let globalObject = {
         let department;
 
         for (let i = 0; i < coordinatesOfAllGroups.length; i++) {
-
-            console.log('SOSI')
 
             for (let j = 69; j < 91; j++) {
                 if (worksheet[`${String.fromCharCode(j)}${coordinatesOfAllGroups[i]}`] != null) {
@@ -150,15 +148,15 @@ let globalObject = {
 
                     listJson.table.push({
                         _id: mongoose.Types.ObjectId(new ObjectId()),
-                        group: numberGroup.toString(),
-                        idUser: department,
                         title: subject,
-                        idAudience: checkedAudience.toString().toUpperCase(),
-                        idType: type,
                         teacher: teacher,
+                        group: numberGroup.toString(),
+                        date: dateOfLesson.toISOString().substring(0, 10),
+                        idAudience: checkedAudience.toString().toUpperCase(),
                         numberLesson: numberLesson === 'I' ? 1 : numberLesson === 'II' ? 2 : numberLesson === 'III' ? 3 : numberLesson
                         === 'IV' ? 4 : numberLesson,
-                        date: dateOfLesson.toISOString().substring(0, 10)
+                        idType: type,
+                        idUser: department,
                     })
                 }
 
@@ -287,12 +285,11 @@ let globalObject = {
                         === 'IV' ? 4 : numberLesson,
                         idType: type,
                         idUser: department,
-                        __v: 0
                     })
                 }
             }
         }
-        fs.writeFile(__dirname + "/files/readedFile.json", JSON.stringify(listJson, null, 4), (err) => {
+        fs.writeFile(__dirname + "\\files\\readedFile.json", JSON.stringify(listJson, null, 4), (err) => {
             if (err) {
                 console.error(err);
                 return;
