@@ -156,7 +156,7 @@ let globalObject = {
                         numberLesson: numberLesson === 'I' ? 1 : numberLesson === 'II' ? 2 : numberLesson === 'III' ? 3 : numberLesson
                         === 'IV' ? 4 : numberLesson,
                         idType: type,
-                        idUser: department,
+                        idUser: department
                     })
                 }
 
@@ -284,11 +284,13 @@ let globalObject = {
                         numberLesson: numberLesson === 'I' ? 1 : numberLesson === 'II' ? 2 : numberLesson === 'III' ? 3 : numberLesson
                         === 'IV' ? 4 : numberLesson,
                         idType: type,
-                        idUser: department,
+                        idUser: department
                     })
                 }
             }
         }
+
+
         fs.writeFile(__dirname + "\\files\\readedFile.json", JSON.stringify(listJson, null, 4), (err) => {
             if (err) {
                 console.error(err);

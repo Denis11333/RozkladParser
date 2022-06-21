@@ -14,6 +14,8 @@ let globalObject = {
             const db = client.db("digital-department-viti");
             const dbo = db.collection("lessons");
 
+            console.log("ok")
+
             var myobj = [];
             for (let i = 0; i < json.table.length; i++) {
 
@@ -28,6 +30,7 @@ let globalObject = {
                     "idUser": new ObjectID(json.table[i].idUser),
                     __v: 0
                 }
+
             }
 
             dbo.insertMany(myobj, function (err, res) {

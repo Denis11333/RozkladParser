@@ -1,5 +1,6 @@
 let fs = require('fs')
 let mongoose = require('mongoose')
+
 let globalObject = {
     readFile() {
         console.log("I`m ok")
@@ -38,67 +39,71 @@ let globalObject = {
 
                     collection.find().toArray(function (err, results) {
                         for (let i = 0; i < editedPars.table.length; i++) {
-                            if (editedPars.table[i].idType === 'Л') {
-                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[0]._id);
-                            }
-                            if (editedPars.table[i].idType === 'ГЗ') {
-                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[1]._id);
-                            }
-                            if (editedPars.table[i].idType === 'ПЗ') {
-                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[2]._id);
-                            }
-                            if (editedPars.table[i].idType === 'CP') {
-                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[3]._id);
-                            }
 
-                            if (editedPars.table[i].idType === 'ЕКЗ') {
+                            if (editedPars.table[i].idType === 'Л')
+                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[0]._id);
+
+                            else if (editedPars.table[i].idType === 'ГЗ')
+                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[1]._id);
+
+                            else if (editedPars.table[i].idType === 'ПЗ')
+                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[2]._id);
+
+                            else if (editedPars.table[i].idType === 'CP')
+                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[3]._id);
+
+                            else if (editedPars.table[i].idType === 'ЕКЗ')
                                 editedPars.table[i].idType = mongoose.Types.ObjectId(results[4]._id);
-                            }
+
+                            else if(editedPars.table[i].idType === "ЛЗ")
+                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[5]._id);
+
+                            else if(editedPars.table[i].idType === "КР")
+                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[6]._id);
+
                         }
 
                         collection = db.collection("users")
 
                         collection.find().toArray(function (err, results) {
                             for (let i = 0; i < editedPars.table.length; i++) {
-                                console.log(results)
-                                if (editedPars.table[i].idUser === '22') {
+
+                                if (editedPars.table[i].idUser === '22')
                                     editedPars.table[i].idUser = mongoose.Types.ObjectId(results[0]._id);
-                                }
-                                if (editedPars.table[i].idUser === '21') {
+
+                                else if (editedPars.table[i].idUser === '21')
                                     editedPars.table[i].idUser = mongoose.Types.ObjectId(results[0]._id);
-                                }
-                                if (editedPars.table[i].idUser === '23') {
+
+                                else if (editedPars.table[i].idUser === '23')
                                     editedPars.table[i].idUser = mongoose.Types.ObjectId(results[0]._id);
-                                }
                             }
 
                             collection = db.collection("audience");
 
                             collection.find().toArray(function (err, results) {
                                 for (let i = 0; i < editedPars.table.length; i++) {
-                                    if(editedPars.table[i].idAudience == "219")
+                                    if (editedPars.table[i].idAudience === "219")
                                         editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[0]._id);
 
-                                    else if(editedPars.table[i].idAudience == "219a")
+                                    else if (editedPars.table[i].idAudience === "219a")
                                         editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[1]._id);
 
-                                    else if(editedPars.table[i].idAudience == "221")
+                                    else if (editedPars.table[i].idAudience === "221")
                                         editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[2]._id);
 
-                                    else if(editedPars.table[i].idAudience == "223")
+                                    else if (editedPars.table[i].idAudience === "223")
                                         editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[3]._id);
 
-                                    else if(editedPars.table[i].idAudience == "224")
+                                    else if (editedPars.table[i].idAudience === "224")
                                         editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[4]._id);
 
-                                    else if(editedPars.table[i].idAudience == "226")
+                                    else if (editedPars.table[i].idAudience === "226")
                                         editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[5]._id);
 
-                                    else if(editedPars.table[i].idAudience == "230")
+                                    else if (editedPars.table[i].idAudience === "230")
                                         editedPars.table[i].idAudience = mongoose.Types.ObjectId(results[6]._id);
 
                                 }
-
 
 
                                 for (let i = 0; i < editedPars.table.length; i++) {
@@ -127,6 +132,7 @@ let globalObject = {
         })
     }
 }
+
 module.exports = {
     gW: globalObject
 }

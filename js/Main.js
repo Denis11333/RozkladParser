@@ -44,7 +44,8 @@ app.post('/upload', function (req, res) {
         let dbPush = require('./dbPushParsJson')
         dbPush.bd.addInBd();
     }
-    setTimeout(sleep, 15000 );
+
+    setTimeout(sleep, 15000);
 
     console.log(req.files.photo); // the uploaded file object
 })
@@ -55,7 +56,7 @@ var server = app.listen(7999, function () {
     var host = server.address().address
     var port = server.address().port
 
-    console.log("Example app listening at http://%s:%s", host, port)
+    console.log("Example app listening at http:localhost//%s:%s", host, port)
 
 })
 
