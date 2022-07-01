@@ -24,16 +24,18 @@ app.get('/', function (req, res) {
 })
 
 app.post('/upload', function (req, res) {
-
     req.files.photo.mv(__dirname + '/public/pics/' + req.files.photo.name);
 
     res.end(req.files.photo.name);
 
-    let readFile = require("./readFile.js");
+    async function waitFor() {
+        let readFile = require("./readFile.js");
+        readFile.gW.readFile(req.files.photo.name)
+    }
+    setTimeout(waitFor,2000 )
 
-    readFile.gW.readFile(req.files.photo.name)
 
-    function myFunc() {
+    async function myFunc() {
         let fillPars = require('./fillParsJson');
         fillPars.gW.readFile();
     }
@@ -41,7 +43,7 @@ app.post('/upload', function (req, res) {
     setTimeout(myFunc, 10000);
 
 
-    function sleep() {
+    async function sleep() {
         let dbPush = require('./dbPushParsJson')
         dbPush.bd.addInBd();
     }
@@ -57,7 +59,7 @@ var server = app.listen(7999, function () {
     var host = server.address().address
     var port = server.address().port
 
-    console.log("Example app listening at http:localhost//%s:%s", host, port)
+    console.log("Example app listening at http://%s:%s", host, port)
 
 })
 
