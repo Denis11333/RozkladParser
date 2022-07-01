@@ -24,9 +24,17 @@ app.get('/', function (req, res) {
 })
 
 app.post('/upload', function (req, res) {
+
     req.files.photo.mv(__dirname + '/public/pics/' + req.files.photo.name);
 
-    res.end(req.files.photo.name);
+    res.write('<h1> Enter your file ( xls only ) </h1>')
+
+    res.write('<form action="/upload" method="POST" enctype="multipart/form-data" >');
+    res.write('<input type="file" name="photo">');
+    res.write('<input type="submit">');
+    res.write('</form>');
+
+    res.end("File inserting : " + req.files.photo.name);
 
     async function waitFor() {
         let readFile = require("./readFile.js");
