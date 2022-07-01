@@ -24,6 +24,7 @@ app.get('/', function (req, res) {
 })
 
 app.post('/upload', function (req, res) {
+
     req.files.photo.mv(__dirname + '/public/pics/' + req.files.photo.name);
 
     res.end(req.files.photo.name);
