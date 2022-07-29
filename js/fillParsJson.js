@@ -34,7 +34,6 @@ let globalObject = {
                         }
                     }
 
-
                     collection = db.collection("types");
 
                     collection.find().toArray(function (err, results) {
@@ -54,12 +53,6 @@ let globalObject = {
 
                             else if (editedPars.table[i].idType === 'ЕКЗ')
                                 editedPars.table[i].idType = mongoose.Types.ObjectId(results[4]._id);
-
-                            else if(editedPars.table[i].idType === "ЛЗ")
-                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[5]._id);
-
-                            else if(editedPars.table[i].idType === "КР")
-                                editedPars.table[i].idType = mongoose.Types.ObjectId(results[6]._id);
 
                         }
 
@@ -105,9 +98,8 @@ let globalObject = {
 
                                 }
 
-
                                 for (let i = 0; i < editedPars.table.length; i++) {
-                                    if (editedPars.table[i].idUser !== undefined) {
+                                    if (editedPars.table[i].idUser != null) {
                                         if (editedPars.table[i].idUser.toString().length > 15) {
                                             formatPars.table.push(editedPars.table[i]);
                                         }
@@ -119,7 +111,8 @@ let globalObject = {
                                         console.error(err);
                                         return;
                                     }
-                                    console.log("File has been created");
+
+                                    console.log("\nFile has been created : " + editedPars.table.length + " elements ( FixedFile.json ) ");
                                 });
 
                                 client.close();

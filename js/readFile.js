@@ -23,7 +23,7 @@ let globalObject = {
         let checkedAudience;
 
         for (let i = 0; i < coordinatesOfDates.length; i++) {
-           datesOfLessons[i] = worksheet[`${coordinatesOfDates[i]}${6}`].w;
+            datesOfLessons[i] = worksheet[`${coordinatesOfDates[i]}${6}`].w;
         }
 
         let numberLesson
@@ -46,7 +46,13 @@ let globalObject = {
                     if (j > 84)
                         dateOfLesson = new Date(datesOfLessons[2]);
 
-                    numberGroup = worksheet[`BA${coordinatesOfAllGroups[i]}`].v;
+                    if (worksheet[`BA${coordinatesOfAllGroups[i]}`] != null) {
+                        numberGroup = worksheet[`BA${coordinatesOfAllGroups[i]}`].v;
+                    }
+                    else{
+                        numberGroup = 0;
+                    }
+
                     if (worksheet[`${String.fromCharCode(j)}${7}`] === undefined) {
                         numberLesson = worksheet[`${String.fromCharCode(j - 1)}${7}`].v
                     } else {
@@ -95,7 +101,13 @@ let globalObject = {
                         subject = 'CP';
                         type = 'CP';
                         department = index;
-                        teacher = worksheet[`${String.fromCharCode(j)}${coordinatesOfAllGroups[i] - 1}`].v;
+
+                        if(worksheet[`${String.fromCharCode(j)}${coordinatesOfAllGroups[i] - 1}`] != null) {
+                            teacher = worksheet[`${String.fromCharCode(j)}${coordinatesOfAllGroups[i] - 1}`].v;
+                        }
+                        else{
+                            teacher = "Change"
+                        }
 
                     }
 
@@ -174,7 +186,12 @@ let globalObject = {
                     if (j >= 83)
                         dateOfLesson = new Date(datesOfLessons[5]);
 
-                    numberGroup = worksheet[`BA${coordinatesOfAllGroups[i]}`].v;
+                    if(worksheet[`BA${coordinatesOfAllGroups[i]}`] != null) {
+                        numberGroup = worksheet[`BA${coordinatesOfAllGroups[i]}`].v;
+                    }
+                    else{
+                        numberGroup = "0"
+                    }
 
                     if (worksheet[`${String.fromCharCode(65, j)}${7}`] === undefined) {
                         numberLesson = worksheet[`${String.fromCharCode(65, j - 1)}${7}`].v
@@ -223,7 +240,12 @@ let globalObject = {
                         department = index;
                         subject = 'CP';
                         type = 'CP';
-                        teacher = worksheet[`${String.fromCharCode(65, j)}${coordinatesOfAllGroups[i] - 1}`].v;
+                        if(worksheet[`${String.fromCharCode(65, j)}${coordinatesOfAllGroups[i] - 1}`] != null) {
+                            teacher = worksheet[`${String.fromCharCode(65, j)}${coordinatesOfAllGroups[i] - 1}`].v;
+                        }
+                        else{
+                            teacher = "Change"
+                        }
 
                     }
 
@@ -290,13 +312,13 @@ let globalObject = {
             }
         }
 
-
         fs.writeFile(__dirname + "\\files\\readedFile.json", JSON.stringify(listJson, null, 4), (err) => {
             if (err) {
                 console.error(err);
                 return;
             }
-            console.log("File has been created");
+            console.log("\nFile has been created : " + listJson.table.length + " elements ( ReadedFile.json )");
+
         });
 
     }
