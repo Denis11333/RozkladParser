@@ -312,7 +312,7 @@ let globalObject = {
             }
         }
 
-        fs.writeFile(__dirname + "\\files\\readedFile.json", JSON.stringify(listJson, null, 4), (err) => {
+        fs.writeFile(__dirname + "/files/readedFile.json", JSON.stringify(listJson, null, 4), (err) => {
             if (err) {
                 console.error(err);
                 return;
