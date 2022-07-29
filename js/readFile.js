@@ -6,7 +6,7 @@ let mongoose = require('mongoose')
 let globalObject = {
     readFile(pathOfFile) {
 
-        let workbook = XLSX.readFile(__dirname + '\\public\\pics\\' + pathOfFile)
+        let workbook = XLSX.readFile(__dirname + '/public/pics/' + pathOfFile)
         let worksheet = workbook.Sheets[workbook.SheetNames[0]]
 
         let listJson = {
